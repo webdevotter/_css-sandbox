@@ -4,18 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Implementing CSS</title>
+  <title>CSS Selectors</title>
   <style>
-    h2 {
-      background-color: blue;
+
+    body {
+      background-color: #333;
     }
+    .primary-heading {
+      color: green;
+    }
+
+    #about {
+      color: white;
+    }
+
+    #welcome {
+      background-color: #f4f4f4;
+    }
+
+    #welcome, 
+    #about {
+      border: 1px solid #f4f4f4;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    #welcome p {
+      font-size: 20px;
+    }
+
   </style>
 </head>
 <body>
-  <h1 style="color: red;">Heading One</h1>
-  <h2>Heading Two</h2>
-  <h3>Heading Three</h3>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nulla in ratione adipisci saepe ducimus quasi, amet, laborum debitis aperiam minus quo labore a qui quia ad sequi dolore sed repellat? Magni quae dolores debitis? Aperiam cupiditate laborum, sit magni hic amet suscipit in, temporibus possimus autem cumque est dolorem!</p>
+
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis officia aspernatur adipisci, fuga similique veniam magni. Odio rem aliquam sequi dolorum magni libero aspernatur dolore commodi neque a fuga quas accusantium at excepturi similique, placeat error qui cupiditate tenetur incidunt repudiandae. Optio, vero tempora. Ab laborum soluta temporibus doloribus. Aut?</p>
+
+  </div>
   
 </body>
 </html>
