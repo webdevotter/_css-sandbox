@@ -4,57 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  
-  <title>Links & Buttons</title>
+  <title>Menu Styling</title>
   <style>
-   
-   body, .btn {
-    font-family: 'Montserrat', sans-serif;
-   }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-   a {
-    text-decoration: none;
-    color: #333;
-    margin-top: 30px;
-   }
+    .side-menu {
+      list-style: none;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+    }
 
-   a:hover {
-    color: blue;
-   }
+    .side-menu li {
+      font-size: 18px;
+      line-height: 2.4em;
+      border-bottom: dotted 1px #ddd;
+    }
 
-   /* a:visited {
-    color: red;
-   } */
+    .side-menu li:last-child {
+      border: none;
+    }
 
-   a:active {
-    color: green;
-   }
+    .side-menu li a {
+      color: #333;
+      text-decoration: none;
+    }
 
-   .btn {
-    background: #4c6ca0;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-   }
-
-   .btn:hover {
-    color: #f4f4f4;
-    background-color: #446190;
-   }
-
+    .side-menu li a:hover {
+      color: coral;
+    }
   </style>
 </head>
 <body>
-  <br>
-  <br>
-  <a class="btn" href="#">Click Here</a>
-  <br>
-  <br>
-  <button class="btn">My Button</button>
-
+  <ul class="side-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </body>
 </html>
