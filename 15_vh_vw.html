@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vh & Vw Units</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header{
+      background: #333 url(./img/landscape.JPG) no-repeat center center/cover;
+      color: #fff;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 20rem;
+    }
+    header h1{
+      z-index: 2;
+      font-size: 3rem;
+    }
+    header p{
+      z-index: 2;
+      margin: 1rem 0;
+    }
+    .btn{
+      display: inline-block;
+      text-decoration: none;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: .75rem 2rem;
+      border-radius: 7px;
+    }
+    #main{
+      z-index: 1;
+      background-color: rgba(51, 51, 51, .7);
+      padding: 2rem;
+      border-radius: 7px;
+    }
+    section {
+      padding: 2rem;
+    }
+
+    @media(max-height: 600px){
+      header {
+        padding-top: 10rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="main">
+      <h1>Welcome To Scotland</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo recusandae ullam rem, animi a itaque doloremque et quaerat ratione, ipsam eveniet. Saepe est sed repellat.</p>
+    <a href="#" class="btn">Find Out More</a>
+    </div>   
+  </header>
+  <section>
+    <h3>About Our Country</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati modi aspernatur dolores maiores alias molestiae veniam dignissimos quis, culpa praesentium ut quibusdam temporibus doloremque, nam, minus hic. Quia doloribus itaque vel perferendis! Obcaecati eveniet sunt corrupti debitis, eum laborum maxime numquam voluptatibus vero nesciunt quaerat incidunt iure. Cumque, praesentium accusamus.</p>
+  </section>
+</body>
+</html>
